@@ -1,0 +1,11 @@
+C:\Users\diana\source\repos\ConsoleJobsProcessing\ConsoleJobsProcessing\bin\Debug\ConsoleJobsProcessing.exe.config
+C:\Users\diana\source\repos\ConsoleJobsProcessing\ConsoleJobsProcessing\bin\Debug\ConsoleJobsProcessing.exe
+C:\Users\diana\source\repos\ConsoleJobsProcessing\ConsoleJobsProcessing\bin\Debug\ConsoleJobsProcessing.pdb
+C:\Users\diana\source\repos\ConsoleJobsProcessing\ConsoleJobsProcessing\bin\Debug\Newtonsoft.Json.dll
+C:\Users\diana\source\repos\ConsoleJobsProcessing\ConsoleJobsProcessing\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\diana\source\repos\ConsoleJobsProcessing\ConsoleJobsProcessing\bin\Debug\Newtonsoft.Json.xml
+C:\Users\diana\source\repos\ConsoleJobsProcessing\ConsoleJobsProcessing\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\diana\source\repos\ConsoleJobsProcessing\ConsoleJobsProcessing\obj\Debug\ConsoleJobsProcessing.csproj.CoreCompileInputs.cache
+C:\Users\diana\source\repos\ConsoleJobsProcessing\ConsoleJobsProcessing\obj\Debug\ConsoleJobsProcessing.csproj.CopyComplete
+C:\Users\diana\source\repos\ConsoleJobsProcessing\ConsoleJobsProcessing\obj\Debug\ConsoleJobsProcessing.exe
+C:\Users\diana\source\repos\ConsoleJobsProcessing\ConsoleJobsProcessing\obj\Debug\ConsoleJobsProcessing.pdb

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="JobsDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tasks">
+          <Key>
+            <PropertyRef Name="task_id" />
+          </Key>
+          <Property Name="task_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="task_name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="task_create_date" Type="datetime" />
+          <Property Name="task_type" Type="varchar" MaxLength="100" />
+          <Property Name="task_description" Type="varchar" MaxLength="500" />
+          <Property Name="task_is_processed" Type="bit" Nullable="false" />
+          <Property Name="task_processed_date" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="JobsDBModelStoreContainer">
+          <EntitySet Name="tasks" EntityType="Self.tasks" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="JobsDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Tasks">
+          <Key>
+            <PropertyRef Name="TaskID" />
+          </Key>
+          <Property Name="TaskID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TaskName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TaskCreateDate" Type="DateTime" Precision="3" />
+          <Property Name="TaskType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TaskDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="TaskIsProcessed" Type="Boolean" Nullable="false" />
+          <Property Name="TaskProcessedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="JobsDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tasks" EntityType="JobsDBModel.Tasks" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="JobsDBModelStoreContainer" CdmEntityContainer="JobsDBEntities">
+          <EntitySetMapping Name="tasks">
+            <EntityTypeMapping TypeName="JobsDBModel.Tasks">
+              <MappingFragment StoreEntitySet="tasks">
+                <ScalarProperty Name="TaskID" ColumnName="task_id" />
+                <ScalarProperty Name="TaskName" ColumnName="task_name" />
+                <ScalarProperty Name="TaskCreateDate" ColumnName="task_create_date" />
+                <ScalarProperty Name="TaskType" ColumnName="task_type" />
+                <ScalarProperty Name="TaskDescription" ColumnName="task_description" />
+                <ScalarProperty Name="TaskIsProcessed" ColumnName="task_is_processed" />
+                <ScalarProperty Name="TaskProcessedDate" ColumnName="task_processed_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JobsDBModelStoreContainer" CdmEntityContainer="JobsDBEntities">
+    <EntitySetMapping Name="tasks">
+      <EntityTypeMapping TypeName="JobsDBModel.Tasks">
+        <MappingFragment StoreEntitySet="tasks">
+          <ScalarProperty Name="TaskID" ColumnName="task_id" />
+          <ScalarProperty Name="TaskName" ColumnName="task_name" />
+          <ScalarProperty Name="TaskCreateDate" ColumnName="task_create_date" />
+          <ScalarProperty Name="TaskType" ColumnName="task_type" />
+          <ScalarProperty Name="TaskDescription" ColumnName="task_description" />
+          <ScalarProperty Name="TaskIsProcessed" ColumnName="task_is_processed" />
+          <ScalarProperty Name="TaskProcessedDate" ColumnName="task_processed_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

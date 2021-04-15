@@ -1,0 +1,12 @@
+C:\Users\diana\source\repos\JobsService\JobsDataAccess\obj\Debug\JobsDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\diana\source\repos\JobsService\JobsDataAccess\bin\Debug\JobsDataAccess.dll.config
+C:\Users\diana\source\repos\JobsService\JobsDataAccess\bin\Debug\JobsDataAccess.dll
+C:\Users\diana\source\repos\JobsService\JobsDataAccess\bin\Debug\JobsDataAccess.pdb
+C:\Users\diana\source\repos\JobsService\JobsDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\diana\source\repos\JobsService\JobsDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diana\source\repos\JobsService\JobsDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\diana\source\repos\JobsService\JobsDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diana\source\repos\JobsService\JobsDataAccess\obj\Debug\JobsDataAccess.csproj.CopyComplete
+C:\Users\diana\source\repos\JobsService\JobsDataAccess\obj\Debug\JobsDataAccess.dll
+C:\Users\diana\source\repos\JobsService\JobsDataAccess\obj\Debug\JobsDataAccess.pdb
+C:\Users\diana\source\repos\JobsService\JobsDataAccess\obj\Debug\JobsDataAccess.csprojAssemblyReference.cache
