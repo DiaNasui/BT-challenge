@@ -7,11 +7,11 @@ Functionalitate:
 tipul taskului, un flag care semnaleaza daca s-a trimis sau nu notificarea si data trimiterii sau null daca notificarea nu a fost trimisa).
 
 2) Avem un Serviciu de WEB API pt notificari unde putem sa:
-a) Extragem valorile din tabel / notificarile inserate in tabelul tasks (\GetJobs)
-b) Extragem o notificare specifica dupa un anumit ID (\GetJobById?id=)
-c) Inseram o notificare (\Init?task)
-d) Modificam flagul ca fiind ne trimisa notificarea(\Reject?id=)
-e) Modificam flagul ca fiind trimisa/procesata notificara (\Confirm?id=)
+    a) Extragem valorile din tabel / notificarile inserate in tabelul tasks (\GetJobs)
+    b) Extragem o notificare specifica dupa un anumit ID (\GetJobById?id=)
+    c) Inseram o notificare (\Init?task)
+    d) Modificam flagul ca fiind ne trimisa notificarea(\Reject?id=)
+    e) Modificam flagul ca fiind trimisa/procesata notificara (\Confirm?id=)
 
 3) Avem console app care parcurge lista notificarilor din DB si pe cele marcate ca fiind netrimise le trimite ca mail cu Subject fiind numele notificarii 
 si Body descrierea notificarii (date luate din tabelul de tasks) pe o anumita adresa de email. In continuare dupa trimiterea mail-ului notificarile sunt updatate in baza de date
